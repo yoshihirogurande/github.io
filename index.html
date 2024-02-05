@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自分チャット</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header><h1>自分チャット</h1></header>
+    <main>
+        <!-- チャットメッセージを表示する場所 -->
+        <div id="chatContentu">
+            <dl id="out"></dl>
+        </div>
+
+        <div id="controller">
+
+           <!-- 文字を打ち込む部分 -->
+            <input type="text" id="inp"></input>
+            <!-- ボタンリスト -->
+            <div id="bottons">
+                <input type="button" value="べえ" onclick="sendM(name)">
+                <input type="button" value="グミ" onclick="sendM(name)">
+                <input type="button" value="消す" onclick="res()">
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </main>     
+</body>
+    
+<footer></footer>    
+       
+
+</html>
