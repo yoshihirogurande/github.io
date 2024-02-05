@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自分チャット</title>
+    <title>タイピングゲーム</title>
     <link rel="stylesheet" href="./main.css">
+
 </head>
 <body>
-    <header><h1>自分チャット</h1></header>
-    <main>
-        <!-- チャットメッセージを表示する場所 -->
-        <div id="chatContentu">
-            <dl id="out"></dl>
+  <div id="game" class="text-container">
+    <label for="inputText">
+    <div class="question">
+        <span id="entered" class="marker"></span>
+        <span id="remained"></span>
+    </div>
+    <input type="text" class="text" id="inputText" autofocus>
+    </label>
+    </div>
+    <div id="message" class="text-container hidden">
+        <div class="message">
+            ゲームクリア!お疲れ様でした！<br>
+            <button id="replayBtn" class="button">もう一度プレイする</button>
         </div>
-
-        <div id="controller">
-
-           <!-- 文字を打ち込む部分 -->
-            <input type="text" id="inp"></input>
-            <!-- ボタンリスト -->
-            <div id="bottons">
-                <input type="button" value="べえ" onclick="sendM(name)">
-                <input type="button" value="グミ" onclick="sendM(name)">
-                <input type="button" value="消す" onclick="res()">
-            </div>
-        </div>
-        <script src="./main.js"></script>
-    </main>     
+    </div>
+  
+  <script src="./main.js"></script>
 </body>
-    
-<footer></footer>    
-       
-
 </html>
