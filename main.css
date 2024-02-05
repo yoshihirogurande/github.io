@@ -1,0 +1,22 @@
+html{
+    height:100%;
+}
+body{
+    text-align: center;
+}
+header{
+    height: 30px;
+}
+.beysan{background-color: darksalmon;
+    color: red;
+
+}
+.gumisan{
+    background-color: aquamarine;
+    color:blue ;
+}
+
+.msg{
+    text-align-last: left;
+    padding-left: 5px;
+}
